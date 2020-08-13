@@ -3,14 +3,14 @@ class School
   
   attr_reader :roster
   
-ROSTER = {}
+roster = {}
 
   def roster=(roster)
     @roster = roster
   end
   
   def add_student(name, grade)
-    if ROSTER[grade]
+    if roster[grade]
       ROSTER[grade] = []
       ROSTER[grade] << name
     else
