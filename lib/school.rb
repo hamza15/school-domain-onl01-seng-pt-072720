@@ -7,8 +7,12 @@ class School
   end
   
   def add_student(name, grade)
-    roster[name] = []
-    roster[name] << grade
+    if roster[grade]
+      roster[grade] << name
+    else
+      roster[grade] = []
+      roster[grade] << name
+    end
   end
     
   
