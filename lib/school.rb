@@ -22,7 +22,10 @@ class School
   end
   
   def sort
-    @roster.sort
+    @roster.each do |name|
+      name.sort
+    end
+    @roster
   end
     
   
