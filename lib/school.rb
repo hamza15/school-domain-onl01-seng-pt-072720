@@ -4,9 +4,9 @@ class School
   attr_reader :roster
   
 ROSTER = {}
-  
-  def initialize(roster = {})
-    @roster = roster
+
+  def roster=(roster)
+    
   end
   
   def add_student(name, grade)
