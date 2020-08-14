@@ -26,7 +26,7 @@ class School
     @roster.each do |name, value|
       sorted[name] = value.sort
     end
-    @roster
+    sorted
   end
     
   
